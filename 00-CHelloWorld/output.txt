@@ -1,0 +1,9 @@
+Se ejecutaron los siguientes comandos:
+
+gcc hello.c
+
+./a.out
+
+Se obtuvo como resultado la siguente linea:
+
+Hello, world!
