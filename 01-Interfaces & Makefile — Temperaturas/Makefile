@@ -1,6 +1,6 @@
-SOURCE = hello.c
-BIN = hello.out
-OBJ = hello.o
+SOURCE = TablasDeConversion.c
+BIN = TablasDeConversion.out
+OBJ = TablasDeConversion.o
 CONVC = Conversion.c
 CONVH = Conversion.h
 CONVO = Conversion.o
