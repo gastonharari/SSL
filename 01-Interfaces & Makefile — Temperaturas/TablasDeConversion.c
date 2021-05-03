@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "Conversion.h"
+#include "PrintTablas.h"
 
 int main()
 {
@@ -8,18 +9,10 @@ int main()
     double fahr, celsius;
 
     printf("\n\nFahrenheit => Celsius:\n\n");
-    for (fahr = 0.0; fahr <= upper; fahr=fahr+step)
-    {
-        celsius = Celsius(fahr);
-        printf("%.0f\t%.2f\n", fahr, celsius);
-    }
+    PrintTabla(Celsius,upper,step);
 
     printf("\n\nCelsius => Fahrenheit:\n\n");
-    for (celsius = 0.0; celsius <= upper; celsius=celsius+step)
-    {
-        fahr = Farenheit(celsius);
-        printf("%.0f\t%.2f\n", celsius, fahr);
-    }
-
+    PrintTabla(Farenheit,upper,step);
+    
     return 0;
 }

@@ -4,6 +4,9 @@ OBJ = TablasDeConversion.o
 CONVC = Conversion.c
 CONVH = Conversion.h
 CONVO = Conversion.o
+PRINTC = PrintTablas.c
+PRINTH = PrintTablas.h
+PRINTO = PrintTablas.o
 SOURCETEST = ConversionTest.c
 BINTEST = ConversionTest.out
 OBJTEST = ConversionTest.o
@@ -19,14 +22,17 @@ $(BINTEST): $(OBJTEST) $(CONVO)
 $(OBJTEST): $(SOURCETEST) $(CONVH)
 	$(CC) -c $(SOURCETEST) -o $(OBJTEST) $(CFLAGS)
 
-$(BIN): $(OBJ) $(CONVO)
-	$(CC) $(OBJ) $(CONVO) -o $(BIN) $(CFLAGS)
+$(BIN): $(OBJ) $(CONVO) $(PRINTO)
+	$(CC) $(OBJ) $(CONVO) $(PRINTO) -o $(BIN) $(CFLAGS)
 	
-$(OBJ): $(SOURCE) $(CONVH)
+$(OBJ): $(SOURCE) $(CONVH) $(PRINTH)
 	$(CC) -c $(SOURCE) -o $(OBJ) $(CFLAGS)
 
 $(CONVO): $(CONVH) $(CONVC)
 	$(CC) -c $(CONVC) -o $(CONVO) $(CFLAGS)
+
+$(PRINTO): $(PRINTH) $(PRINTC)
+	$(CC) -c $(PRINTC) -o $(PRINTO) $(CFLAGS)
 
 clean:
 	$(RM) *.o
