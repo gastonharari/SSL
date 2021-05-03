@@ -15,6 +15,16 @@ int main(){
     assert(GetFahrFromCels(100)==212.0);
     printf("OK \n");
 
+    printf("\n\nTest GetCelsFromFahr:\n\n");
+
+    printf("GetCelsFromFahr - 41 Fahr \t");
+    assert(GetCelsFromFahr(41)==5.0);
+    printf("OK \n");
+
+    printf("GetCelsFromFahr - 212 Fahr \t");
+    assert(GetCelsFromFahr(212)==100.0);
+    printf("OK \n");
+
     printf("\n\nTest Finish OK\n\n");
 
     return 0;
