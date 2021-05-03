@@ -3,11 +3,9 @@
 
 int main()
 {
+    const int upper =300;  /* upper limit */
+    const int step =20;    /* step size */
     double fahr, celsius;
-    int lower, upper, step;
-
-    upper = 300; /* upper limit */
-    step = 20; /* step size */
 
     printf("\n\nFahrenheit => Celsius:\n\n");
     for (fahr = 0.0; fahr <= upper; fahr=fahr+step)
