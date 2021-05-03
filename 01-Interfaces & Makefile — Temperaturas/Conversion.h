@@ -1,5 +1,5 @@
 #pragma once
 
-double GetCelsFromFahr(double);
+double Celsius(double);
 
-double GetFahrFromCels(double);
+double Farenheit(double);

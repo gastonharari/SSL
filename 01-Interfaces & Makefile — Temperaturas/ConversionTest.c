@@ -5,24 +5,24 @@
 int main(){
     printf("\n\nTest Start:\n\n\n");
     
-    printf("Test GetFahrFromCels:\n\n");
+    printf("Test Farenheit:\n\n");
 
-    printf("GetFahrFromCels - 0 Cels \t");
-    assert(GetFahrFromCels(0)==32.0);
+    printf("Farenheit - 0 Cels \t");
+    assert(Farenheit(0)==32.0);
     printf("OK \n");
 
-    printf("GetFahrFromCels - 100 Cels \t");
-    assert(GetFahrFromCels(100)==212.0);
+    printf("Farenheit - 100 Cels \t");
+    assert(Farenheit(100)==212.0);
     printf("OK \n");
 
-    printf("\n\nTest GetCelsFromFahr:\n\n");
+    printf("\n\nTest Celsius:\n\n");
 
-    printf("GetCelsFromFahr - 41 Fahr \t");
-    assert(GetCelsFromFahr(41)==5.0);
+    printf("Celsius - 41 Fahr \t");
+    assert(Celsius(41)==5.0);
     printf("OK \n");
 
-    printf("GetCelsFromFahr - 212 Fahr \t");
-    assert(GetCelsFromFahr(212)==100.0);
+    printf("Celsius - 212 Fahr \t");
+    assert(Celsius(212)==100.0);
     printf("OK \n");
 
     printf("\n\nTest Finish OK\n\n");
