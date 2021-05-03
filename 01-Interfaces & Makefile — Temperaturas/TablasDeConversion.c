@@ -17,6 +17,18 @@ int main()
     printf("%.0f\t%.2f\n", fahr, celsius);
     fahr = fahr + step;
     }
- 
+
+    lower = 0; /* lower limit of temperature scale */
+    upper = 300; /* upper limit */
+    step = 20; /* step size */
+    celsius = lower;
+
+    printf("\n\nCelsius to Fahrenheit:\n\n");
+    while (celsius <= upper) {
+    fahr = GetFahrFromCels(celsius);
+    printf("%.0f\t%.2f\n", celsius, fahr);
+    celsius = celsius + step;
+    }
+
     return 0;
 }
