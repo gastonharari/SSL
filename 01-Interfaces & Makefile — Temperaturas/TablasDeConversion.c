@@ -6,7 +6,7 @@ int main()
 {
     const int upper =300;  /* upper limit */
     const int step =20;    /* step size */
-    double fahr, celsius;
+    ///double fahr, celsius;
 
     printf("\n\nFahrenheit => Celsius:\n\n");
     PrintTabla(Celsius,upper,step);
