@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "PrintTablas.h"
 
 void printFila(double fst, double snd){
     printf("%.0f\t%.2f\n", fst, snd);
